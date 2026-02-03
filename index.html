@@ -10,6 +10,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="vendors/css/queries.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -17,21 +19,22 @@
             <div class="row">
                 <img class="logo" src="resources/img/Logo.png" alt="Logo-img">
             <ul class="main-nav">
-                <li><a href="#">Food delivery</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Our Cities</a></li>
-                <li><a href="#">Sign-up</a></li>
+                <li><a href="#features">Food delivery</a></li>
+                <li><a href="#hiw">How it works</a></li>
+                <li><a href="#city">Our Cities</a></li>
+                <li><a href="#signup">Sign-up</a></li>
             </ul>
             </div>
             
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food <br> Hello super healthy food</h1>
-            <a class="btn btn-full" href="#">I'm Hungry</a>
-            <a class="btn btn-ghost" href="#">Show me more</a>
+            <a class="btn btn-full" href="#plans">I'm Hungry</a>
+            <a class="btn btn-ghost" href="#features">Show me more</a>
         </div>
     </header>
-    <section class="section-features">
+    <main>
+    <section class="section-features" id="features">
         <div class="row">
             <h2>Get food fast &mdash; Not fast food
             </h2>
@@ -60,7 +63,7 @@
             </div>
         </div>
     </section>
-    <section class="section-meals">
+    <section class="section-meals"  data-aos="fade-in" data-aos-duration="2000">
         <ul class="meals-showcase ">
             <li>
                 <figure class="meal-photo">
@@ -106,13 +109,13 @@
             </li>
         </ul>
     </section>
-    <section class="section-steps clearfix">
+    <section class="section-steps clearfix" id="hiw"  data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>How it works &mdash; Simple as 1,2,3</h2>
         </div>
         <div class="row">
             <div class="col span_1_of_2 steps-box">
-                <img src="resources/img/smartphone.png" alt="phone-img" class="app-screen">
+                <img src="resources/img/smartphone.png" alt="phone-img" class="app-screen" data-aos="slide-left" data-aos-duration="1000">
             </div>
             <div class="col span_1_of_2 steps-box">
                 <div class="works-step">
@@ -132,7 +135,7 @@
             </div>
         </div>
     </section>
-    <section class="section-cities clearfix">
+    <section class="section-cities clearfix" id="city"  data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
@@ -191,7 +194,7 @@
             </div>
         </div>
     </section>
-    <section class="section-testimonials">
+    <section class="section-testimonials"  data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>Our Customer can't live without us</h2>
         </div>
@@ -216,14 +219,14 @@
             </div>
         </div>
     </section>
-    <section class="section-plans clearfix">
+    <section class="section-plans clearfix" id="plans"  data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
         <div class="row">
             <div class="col span_1_of_3">
                 <div class="plan-box">
-                    <div>
+                    <div data-aos="zoom-in-up" data-aos-duration="2000">
                         <h3>Premium</h3>
                         <p class="plan-price">$399<span>/ month</span></p>
                         <p class="plan-price-meal">That's only $13.905 per meal</p>
@@ -262,7 +265,7 @@
                 </div>
             </div>
             <div class="col span_1_of_3">
-                <div class="plan-box ex">
+                <div class="plan-box">
                     <div>
                         <h3>Starter</h3>
                         <p class="plan-price">$19<span>/ meal</span></p>
@@ -276,20 +279,19 @@
                             <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Free delivery</li>
                         </ul>
                     </div>
-                    <div class="ex2">
+                    <div>
                         <a href="#" class="btn btn-ghost">Sign up</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section-form">
+    <section class="section-form" id="signup"  data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>We're happy to hear from you</h2>
         </div>
         <div class="row">
-            <form action="#" method="post" class="contact-form
-            ">
+            <form action="#" method="post" class="contact-form">
                 <div class="row">
                     <div class="col span_1_of_3"> 
                         <label>Name</label>
@@ -339,14 +341,70 @@
                     <div class="col span_1_of_3"> 
                         <label>&nbsp;</label>
                     </div>
-                    <div class="col span_2_of_3">
+                    <div class="col span_1_of_3">
                         <input type="submit" value="Send-me">
                     </div>
                 </div>
             </form>
         </div>
     </section>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col span_1_of_2">
+                <ul class="footer-nav">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">IOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
+            </div>
+            <div class="col span_1_of_2">
+                <ul class="social-links">
+                    <li><ion-icon name="logo-facebook" class="fb"></ion-icon></li>
+                    <li><ion-icon name="logo-twitter" class="twitter"></ion-icon></li>
+                    <li><ion-icon name="logo-google" class="google"></ion-icon></li>
+                    <li><ion-icon name="logo-instagram" class="insta"></ion-icon></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>Copyright &copy; 2015 by Food Project. All rights reserved</p>
+        </div>
+    </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+$("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+    event.preventDefault();
+
+      // Store hash
+    var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+    });
+    } // End if
+});
+});
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
